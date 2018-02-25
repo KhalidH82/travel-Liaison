@@ -1,0 +1,32 @@
+{
+  "name": "travel-liaison",
+  "version": "1.0.0",
+  "description": "CRUD app",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.15.1",
+    "pg-promise": "^8.0.0",
+    "session": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhalidH82/travel-Liaison.git"
+  },
+  "author": "Khalid Hosein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhalidH82/travel-Liaison/issues"
+  },
+  "homepage": "https://github.com/KhalidH82/travel-Liaison#readme"
+}
