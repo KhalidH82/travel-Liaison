@@ -26,16 +26,16 @@ index(req, res, next) {
         next();
       })
       .catch(err => next(err));
-  }	
+  },	
 
-// getOne(req, res, next) {
-//     clientDB.findById(req.params.id)
-//       .then((client) => {
-//         res.locals.client = client;
-//         next();
-//       })
-//       .catch(err => next(err));
-//   },
+getOne(req, res, next) {
+    clientDB.findById(req.params.id)
+      .then((client) => {
+        res.locals.client = client;
+        next();
+      })
+      .catch(err => next(err));
+  }
 
 //  create(req, res, next) {
 //     clientDB.save(req.body)

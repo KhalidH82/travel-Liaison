@@ -8,7 +8,7 @@ const clientsRouter = express.Router();
 
 
 clientsRouter.get('/', clientsController.index, views.showClients);
-
+clientsRouter.get('/:id', clientsController.getOne, views.showOne);
 
 
 

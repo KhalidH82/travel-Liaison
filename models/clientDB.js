@@ -8,13 +8,13 @@ module.exports = {
 	findAll() {
 		return db.many(`SELECT * 
 						FROM clients`);
+	},
+
+
+	findById(id) {
+		return db.one(`SELECT * 
+						FROM clients WHERE id=$1`, id);
 	}
-
-
-	// findById(id) {
-	// 	return db.one(`SELECT clients.id
-	// 					FROM clients`);
-	// },
 
 	// save(client) {
 	// 	return db.one(`INSERT INTO clients (fname, lname, sex, address, homephone, cellphone, email, dob)
