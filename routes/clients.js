@@ -8,11 +8,13 @@ const clientsRouter = express.Router();
 
 
 
-clientsRouter.get('/newclient', clientsController.index, clientsController.makeNewClient, views.showAddForm)
+clientsRouter.get('/:id/editclient', clientsController.index, clientsController.getOne, views.showEditForm, views.show404);
+clientsRouter.get('/newclient', clientsController.index, clientsController.makeNewClient, views.showAddForm, views.show404);
 
 
-clientsRouter.get('/:id', clientsController.getOne, views.showOne);
-clientsRouter.delete('/:id', clientsController.destroy, views.handleDelete);
+clientsRouter.get('/:id', clientsController.getOne, views.showOne, views.show404);
+clientsRouter.put('/:id', clientsController.update, views.handleUpdate)
+clientsRouter.delete('/:id', clientsController.destroy, views.handleDelete, views.show404);
 
 
 clientsRouter.get('/', clientsController.index, views.showClients);

@@ -1,5 +1,9 @@
 module.exports = {
 
+	show404(err, req, res, next) {
+		res.sendStatus(404);
+	},
+
 	showClients(req, res) {
 		res.render('clients/index', {
 			data: res.locals.clients,
@@ -17,9 +21,18 @@ module.exports = {
 		res.render('clients/newclient')
 	},
 
+	showEditForm(req, res) {
+		res.render('clients/clientedit', {
+			data: res.locals.client,
+		});
+	},
 
 	handleCreate(req, res) {
 		res.redirect('clients')
+	},
+
+	handleUpdate(req, res) {
+		res.redirect(`/clients/${req.params.id}`);
 	},
 
 	handleDelete(req, res) {

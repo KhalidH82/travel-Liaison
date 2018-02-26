@@ -22,20 +22,20 @@ module.exports = {
 						RETURNING *`, client);
 	},
 
-	// update(client) {
-	// 	return db.one(`UPDATE clients
-	// 					SET
-	// 					fname = $/fname/,
-	// 					lname = $/lname/,
-	// 					sex = $/sex/,
-	// 					address = $/address/,
-	// 					homephone = $/homephone/,
-	// 					cellphone = $/cellphone/,
-	// 					email = $/email/,
-	// 					dob = $/dob/
-	// 					WHERE id = $/id/
-	// 					RETURNING *`, client);
-	// },
+	update(client) {
+		return db.one(`UPDATE clients
+						SET
+						fname = $/fname/,
+						lname = $/lname/,
+						sex = $/sex/,
+						address = $/address/,
+						homephone = $/homephone/,
+						cellphone = $/cellphone/,
+						email = $/email/,
+						dob = $/dob/
+						WHERE id = $/id/
+						RETURNING *`, client);
+	},
 
 	destroy(id) {
 		return db.none(`DELETE FROM clients

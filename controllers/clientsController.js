@@ -46,14 +46,14 @@ getOne(req, res, next) {
       .catch(err => next(err));
   },
 
-//  update(req, res, next) {
-//     clientDB.update(req.body)
-//       .then((client) => {
-//         res.locals.quote = client;
-//         next();
-//       })
-//       .catch(err => next(err));
-//   },
+ update(req, res, next) {
+    clientDB.update(req.body)
+      .then((client) => {
+        res.locals.quote = client;
+        next();
+      })
+      .catch(err => next(err));
+  },
 
  destroy(req, res, next) {
     clientDB.destroy(req.params.id)
