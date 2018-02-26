@@ -8,7 +8,8 @@ Project 2 CRUD
 <h2> Wireframes </h2>
 <p>Included in wireframes folder</p>
 <h2>User Stories</h2>
-<p>Agents will be able to view all clients in database as well as create new ones. Also, the agent will have to option to delete and edit clients when necessary.</p>
+<p>Agents will be able to view all clients in database as well as create new ones. Also, the agent will have to option to delete and edit clients when necessary.</p><br>
+<p> Clients will be able to perfrom CRUD functions and also view agents profiles. There will also be a page where clients can perform searches on travel, restaurants , and maps. The clients will then be able to attach comments that will be added to their profile for agents to plan clients travel plans.
 <h2> Technologies used </h2>
 <p> The technologies used in this project are Node.js, Express, Ejs, Javascript, SQL, and CSS. These techonologies will utilize the MVC model within the structure of the application. Some other features I would like to include is for clients to be able to perform CRUD on their profiles as well as a page where an API comes in to help clients research travel. Another feature that I would like to implement is a way to have multiple agents that would have their own database of clients accesible through a login feature.<p>
 <h2> Database structure </h2>
