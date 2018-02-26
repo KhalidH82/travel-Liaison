@@ -11,6 +11,8 @@ Project 2 CRUD
 <p>Agents will be able to view all clients in database as well as create new ones. Also, the agent will have to option to delete and edit clients when necessary.</p>
 <h2> Technologies used </h2>
 <p> The technologies used in this project are Node.js, Express, Ejs, Javascript, and CSS. Some other features I would like to include is for clients to be able to perform CRUD on their profiles as well as a page where an API comes in to help clients research travel. Another feature that I would like to implement is a way to have multiple agents that would have their own datbase of clients accesible through a login feature.<p>
+<h2> Database structure </h2>
+<p> My databases are going to include a client database as well as an agent database. I will also have a database which can keep track of which clients belong to each agent.</p>
 
 
 
