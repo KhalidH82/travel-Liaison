@@ -14,13 +14,13 @@ module.exports = {
 	findById(id) {
 		return db.one(`SELECT * 
 						FROM clients WHERE id=$1`, id);
-	}
+	},
 
-	// save(client) {
-	// 	return db.one(`INSERT INTO clients (fname, lname, sex, address, homephone, cellphone, email, dob)
-	// 					VALUES ($/fname/, $/lname/, $/sex/, $/address/, $/homephone/, $/cellphone/, $/email/, $/dob/)
-	// 					RETURNING *`, client);
-	// },
+	save(client) {
+		return db.one(`INSERT INTO clients (fname, lname, sex, address, homephone, cellphone, email, dob)
+						VALUES ($/fname/, $/lname/, $/sex/, $/address/, $/homephone/, $/cellphone/, $/email/, $/dob/)
+						RETURNING *`, client);
+	},
 
 	// update(client) {
 	// 	return db.one(`UPDATE clients
@@ -37,8 +37,8 @@ module.exports = {
 	// 					RETURNING *`, client);
 	// },
 
-	// destroy(id) {
-	// 	return db.none(`DELETE FROM clients
-	// 					WHERE id = $1`, id);
-	// },
+	destroy(id) {
+		return db.none(`DELETE FROM clients
+						WHERE id = $1`, id);
+	},
 };

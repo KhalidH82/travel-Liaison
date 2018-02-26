@@ -12,4 +12,17 @@ module.exports = {
 			data: res.locals.client,
 		});
 	},
+
+	showAddForm(req, res) {
+		res.render('clients/newclient')
+	},
+
+
+	handleCreate(req, res) {
+		res.redirect('clients')
+	},
+
+	handleDelete(req, res) {
+		res.redirect('/clients');
+	},
 };
