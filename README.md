@@ -14,10 +14,10 @@ Project 2 CRUD
 <h2> Database structure </h2>
 <p> My databases are going to include a client database as well as an agent database. I will also have a database which can keep track of which clients belong to each agent.</p>
 <h2> Project Tracker </h2>
-Monday: Complete proposal, server sertup, router set up, CRUD functions for single agent, render views with forms.
-Tuesday: Add functionality for clients to perfrom CRUD functions on thier own profile, include database of agents, link client and agent database.
-Wednesday: Integrate a search page for clients to research travel using third party APIs.
-Thursday: Add uAuth function which would direct the agent/client to the appropriate views.
+Monday: Complete proposal, server sertup, router set up, CRUD functions for single agent, render views with forms.<br>
+Tuesday: Add functionality for clients to perfrom CRUD functions on thier own profile, include database of agents, link client and agent database.<br>
+Wednesday: Integrate a search page for clients to research travel using third party APIs.<br>
+Thursday: Add uAuth function which would direct the agent/client to the appropriate views.<br>
 Friday-Sunday: Refactor code, fix unusual behavior, add styles to all views making it visually appealing to users.
 <h2> Resources </h2>
 <p>Maps:  https://developers.google.com/maps/?hl=en<br>
