@@ -27,10 +27,10 @@ app.use(methodOverride('_method'));
 app.use(express.static('public'));
 
 app.get('/', (req, res)  => {
-	res.send('We out here?!')
+	res.send('Looking to plan an trip of a lifetime?')
 })
 
-
+app.use('/clients', router)
 
 
 

@@ -4,7 +4,10 @@ const clientsController = require('../controllers/clientsController');
 
 const views = require('../controllers/viewController');
 
-const router = express.Router();
+const clientsRouter = express.Router();
+
+
+clientsRouter.get('/', clientsController.index, views.showClients);
 
 
 
@@ -24,7 +27,4 @@ const router = express.Router();
 
 
 
-
-
-
-module.exports = router;
+module.exports = clientsRouter;
