@@ -27,8 +27,10 @@ app.use(methodOverride('_method'));
 app.use(express.static('public'));
 
 app.get('/', (req, res)  => {
-	res.send('Looking to plan an trip of a lifetime?')
-})
+	res.render('home', {
+		documentTitle: 'My life is your vacation'
+	});
+});
 
 app.use('/clients', router)
 

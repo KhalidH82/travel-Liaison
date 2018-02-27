@@ -4,7 +4,9 @@ module.exports = {
 		res.sendStatus(404);
 	},
 
+
 	showClients(req, res) {
+		console.log(res.locals.clients)
 		res.render('clients/index', {
 			data: res.locals.clients,
 		});

@@ -1,14 +1,17 @@
-<% include ../partials/boilerplate.ejs %>
+<% include ../partials/boilerplate %>
 
+
+<a href='/clients/newclient'><button> Create New Client</button></a>
 
 <header>
 <%	clients.forEach(client => { %> 
 		<h1><%= client.fname +' '+ client.lname %></h1>
 		<h2><%= client.dob %></h2>
-		<p><%= client.id %></p>
+		<p><%= client.type %></p>
+
 
 <% }) %>
 </header>
 
 
-<% include ../partials/footer.ejs %>
+<% include ../partials/footer %>

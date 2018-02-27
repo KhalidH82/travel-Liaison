@@ -7,18 +7,23 @@ module.exports = {
 
 	findAll() {
 		return db.many(`SELECT * 
-						FROM clients`);
+						FROM clients
+						JOIN typeofclient
+						ON clients.clienttag= typeofclient.typeid
+						ORDER BY clients.id`);
 	},
 
 
 	findById(id) {
 		return db.one(`SELECT * 
-						FROM clients WHERE id=$1`, id);
+						FROM clients
+						JOIN typeofclient
+						ON clients.clienttag= typeofclient.typeid WHERE id=$1`, id);
 	},
 
 	save(client) {
-		return db.one(`INSERT INTO clients (fname, lname, sex, address, homephone, cellphone, email, dob)
-						VALUES ($/fname/, $/lname/, $/sex/, $/address/, $/homephone/, $/cellphone/, $/email/, $/dob/)
+		return db.one(`INSERT INTO clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag)
+						VALUES ($/fname/, $/lname/, $/sex/, $/address/, $/homephone/, $/cellphone/, $/email/, $/dob/, $/clienttag/)
 						RETURNING *`, client);
 	},
 
@@ -32,7 +37,8 @@ module.exports = {
 						homephone = $/homephone/,
 						cellphone = $/cellphone/,
 						email = $/email/,
-						dob = $/dob/
+						dob = $/dob/,
+						clienttag =$/clienttag/
 						WHERE id = $/id/
 						RETURNING *`, client);
 	},

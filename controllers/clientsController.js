@@ -14,6 +14,7 @@ makeNewClient(req, res, next) {
       cellphone: null,
       email: null,
       dob: null,
+      clienttag: null,
     };
     res.locals.client = newClient;
     next();
@@ -22,6 +23,7 @@ makeNewClient(req, res, next) {
 index(req, res, next) {
     clientDB.findAll()
       .then((clients) => {
+      	console.log(clients)
         res.locals.clients = clients;
         next();
       })

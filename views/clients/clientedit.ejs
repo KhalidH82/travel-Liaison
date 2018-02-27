@@ -2,6 +2,8 @@
 
 
 <form method="POST" action="/clients/<%= data.id%>?_method=PUT">
+<fieldset>
+	<legend>Edit Client</legend>
 <input name="id" type="hidden" value="<%= data.id %>">
 <input name="fname" type="text" value="<%= data.fname %>" />
 <input name="lname" type="text" value="<%= data.lname %>" />
@@ -11,7 +13,11 @@
 <input name="cellphone" type="text" value="<%= data.cellphone %>" />
 <input name="email" type="text" value="<%= data.email %>" />
 <input name="dob" type="text" value="<%= data.dob %>" />
-  <input type="submit" value="Edit Profile" />
+<input type="clienttag" value="<%= data.clienttag %>" />
+</fieldset>
+<input type="submit" value="Edit Profile"/>
 </form>
+
+
 
 <% include ../partials/footer %>

@@ -1,12 +1,26 @@
 <% include ../partials/boilerplate %>
 
 <div class='client'>
-	<h2><%= data.fname +' '+ data.lname %></h2>
+	<fieldset>
+	<legend>Client Profile</legend>
+	<h1><%= data.fname +' '+ data.lname %></h1>
+	<p><%= data.dob %></p>
+	<p><%= data.sex %></p>
+	<p><%= data.address %></p>
+	<p><%= data.homephone %></p>
+	<p><%= data.cellphone %></p>
+	<p><%= data.email %></p>
+	<p><%= data.type %></p>
+
+	</fieldset>
 </div>
 
 <form action="/clients/<%= data.id %>?_method=Delete" method="Post">
     <input type="Submit" value="Delete"/>
   </form>
+
+
+  <a href='/clients/<%=data.id%>/editclient' ><input type="submit" value="Edit Profile"/></a>
 
 
 

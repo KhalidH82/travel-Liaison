@@ -1,6 +1,7 @@
 \c travelDB;
 
 DROP TABLE IF EXISTS clients;
+DROP TABLE IF EXISTS typeofclient;
 
 CREATE TABLE clients (
 	id  SERIAL PRIMARY KEY,
@@ -12,5 +13,11 @@ CREATE TABLE clients (
 	cellphone BIGINT,
 	email VARCHAR(255),
 	dob VARCHAR(255),
+	clienttag INT,
 	date_created TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE typeofclient (
+	typeid SERIAL PRIMARY KEY,
+	type VARCHAR(255)
 );
