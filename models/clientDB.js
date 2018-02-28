@@ -38,7 +38,7 @@ module.exports = {
 						cellphone = $/cellphone/,
 						email = $/email/,
 						dob = $/dob/,
-						clienttag =$/clienttag/
+						clienttag = $/clienttag/
 						WHERE id = $/id/
 						RETURNING *`, client);
 	},

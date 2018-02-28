@@ -2,6 +2,8 @@
 
 DROP TABLE IF EXISTS clients;
 DROP TABLE IF EXISTS typeofclient;
+DROP TABLE IF EXISTS users;
+
 
 CREATE TABLE clients (
 	id  SERIAL PRIMARY KEY,
@@ -21,3 +23,14 @@ CREATE TABLE typeofclient (
 	typeid SERIAL PRIMARY KEY,
 	type VARCHAR(255)
 );
+
+CREATE TABLE users (
+	id SERIAL PRIMARY KEY,
+	username VARCHAR(255) UNIQUE,
+	password VARCHAR(255),
+	hash VARCHAR(255),
+	salt VARCHAR(255)
+);
+
+
+

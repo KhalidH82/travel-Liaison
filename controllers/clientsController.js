@@ -1,5 +1,5 @@
 const clientDB = require('../models/clientDB');
-
+const usersDB = require('../models/usersDB')
 module.exports = {
 
 
@@ -20,10 +20,28 @@ makeNewClient(req, res, next) {
     next();
   },
 
+  findUsers(req, res, next){
+  	usersDB.findAll()
+  	.then(users => {
+  		res.locals.users = users
+  		next()
+  	})
+  	.catch(err => next(err))
+  },
+
+  makeNewUser(req, res) {
+  	usersDB.createUser(req.body)
+  	.then(user => {
+  		res.locals.user = user;
+ 
+  	})
+  	.catch(err => console.log(err));
+
+  },
+
 index(req, res, next) {
     clientDB.findAll()
       .then((clients) => {
-      	console.log(clients)
         res.locals.clients = clients;
         next();
       })
@@ -51,7 +69,7 @@ getOne(req, res, next) {
  update(req, res, next) {
     clientDB.update(req.body)
       .then((client) => {
-        res.locals.quote = client;
+        res.locals.client = client;
         next();
       })
       .catch(err => next(err));

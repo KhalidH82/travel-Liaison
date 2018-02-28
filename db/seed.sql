@@ -37,6 +37,8 @@ INSERT INTO typeofclient (type) VALUES ('Air');
 INSERT INTO typeofclient (type) VALUES ('Car Rental');
 INSERT INTO typeofclient (type) VALUES ('Rail');
 
+INSERT INTO users (username, password) VALUES ('test', 'test');
+
 
 
 

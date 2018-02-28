@@ -4,6 +4,16 @@ module.exports = {
 		res.sendStatus(404);
 	},
 
+	showSignUp(req, res) {
+		res.render('signup')
+	},
+
+	showAllUsers(req,res) {
+		res.render('users', {
+			data: res.locals.users,
+		});
+	},
+
 
 	showClients(req, res) {
 		console.log(res.locals.clients)
@@ -34,7 +44,7 @@ module.exports = {
 	},
 
 	handleUpdate(req, res) {
-		res.redirect(`/clients/${req.params.id}`);
+		res.redirect(`/clients/${req.params.id}`,);
 	},
 
 	handleDelete(req, res) {
