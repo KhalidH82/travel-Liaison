@@ -30,7 +30,7 @@ makeNewClient(req, res, next) {
   },
 
   makeNewUser(req, res) {
-  	usersDB.createUser(req.body)
+  	usersDB.create(req.body)
   	.then(user => {
   		res.locals.user = user;
  

@@ -5,10 +5,9 @@ const logger = require('morgan');
 const methodOverride = require('method-override');
 const usersDB = require('./models/usersDB');
 const hasher = require('pbkdf2-password')();
-
 const bodyParser = require('body-parser');
-
 const router = require('./routes/clients');
+const signupRouter = require('./routes/signup');
 const PORT = process.env.PORT || 3000;
 const app = express();
 
@@ -93,7 +92,7 @@ app.post('/login', (req, res) => {
 
 app.get('/logout', (req, res) => {
 	req.session.destroy(() => {
-		res.redirect('/')
+		res.redirect('/login')
 	});
 });
 
@@ -103,7 +102,9 @@ app.get('/', (req, res)  => {
 	});
 });
 
+app.use('/signup', signupRouter)
 app.use('/clients', router)
+
 
 
 

@@ -1,13 +1,13 @@
 <% include ./partials/boilerplate.ejs %>
   <form action="/login" method="post">
     <label>
-      <input type="text" name="username">
       <p>Username:</p>
-    </label>
+      <input type="text" name="username">
+    </label><br>
     <label>
-      <input type="password" name="password">
       <p>Password:</p>
-    </label>
-    <button type="submit">Log In</button>
+      <input type="password" name="password">
+    </label><br>
+    <button type="submit" class="btn btn-primary">Log In</button>
   </form>
 <% include ./partials/footer.ejs %>
