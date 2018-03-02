@@ -1,4 +1,3 @@
-\c travelDB
 
 insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Grace', 'Echlin', 'Female', '241 Del Sol Court', '(972) 4641637', '(950) 3323718', 'gechlin0@chronoengine.com', '02/06/2011', 6);
 insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Maud', 'Heddon', 'Female', '659 Talisman Center', '(109) 5089795', '(797) 2736787', 'mheddon1@ezinearticles.com', '10/04/1999', 5);
