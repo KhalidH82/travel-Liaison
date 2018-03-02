@@ -25,6 +25,9 @@
     "type": "git",
     "url": "git+https://github.com/KhalidH82/travel-Liaison.git"
   },
+  "engines": {
+    "node":"9.4.0"
+  },
   "author": "Khalid Hosein",
   "license": "ISC",
   "bugs": {
