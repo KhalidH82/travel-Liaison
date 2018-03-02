@@ -1,8 +1,9 @@
 body {
-	background-color: gray;
+	background-color: white;
 	font-family: 'Slabo 13px', serif;
+	background-image: url("/images/travelback.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
-li {
-	list-style-type: none;
-}

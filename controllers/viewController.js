@@ -50,4 +50,13 @@ module.exports = {
 	handleDelete(req, res) {
 		res.redirect('/clients');
 	},
+
+	showLogin(req, res) {
+		console.log("inside show login")
+		res.redirect('/login');
+	},
+
+	showSearch(req, res) {
+		res.render('search');
+	},
 };

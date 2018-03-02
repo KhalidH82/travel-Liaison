@@ -1,17 +1,22 @@
 <% include ../partials/boilerplate %>
 
 
-<a href='/clients/newclient'><button class="btn btn-primary"> Create New Client</button></a>
 
-<header>
+<table class="table table-hover">
+	<tr>
+		<th>Last Name</th>
+		<th>First Name</th>
+		<th>Preference</th>
+	</tr>
 <%	clients.forEach(client => { %> 
-		<h1><%= client.fname +' '+ client.lname %></h1>
-		<h2><%= client.dob %></h2>
-		<p><%= client.type %></p>
-
-
+	<tr>
+	<td><a href='clients/<%= client.id %>'><%= client.lname %></a></td>
+		<td><a href='clients/<%= client.id %>'><%= client.fname %></a></td>
+		<td><%= client.type %></td>
+		</tr>
 <% }) %>
-</header>
+</table>
+<a href='/clients/newclient'><img src="/images/createpro.jpg" width="42" height="42" border="0">Create New Client</button></a>
 
 
 <% include ../partials/footer %>

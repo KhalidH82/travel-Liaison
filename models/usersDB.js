@@ -15,7 +15,8 @@ module.exports = {
 		return db.one(`INSERT INTO users (username, password) VALUES ($[username], $[password]) RETURNING *`, user);
 	},
 
-	create({ username, password}) {
+	create({ username, password }) {
+		// console.log('--> inside create', hashPromise);
 		const hashPromise = new Promise ((resolve, reject) => {
 			hasher({ password }, (err, pass, salt, hash) => {
 				if (err) return reject(err);
@@ -26,13 +27,15 @@ module.exports = {
 				});
 			});
 		});
-		return hashPromise.then(user =>
-			db.one(`
+		return hashPromise.then( user => {
+			console.log('inside hashpromise.then ', user);
+			return db.one(`
 				INSERT INTO users (username, hash, salt) VALUES ($[username], $[hash], $[salt])
-				RETURNING *`,
-				user,
-				),
-			);
+				RETURNING *`, user);
+		}).catch( err => {
+			console.log('err', err);
+
+		});
 	},
 
 	findByUserName(username) {

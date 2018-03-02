@@ -20,24 +20,6 @@ makeNewClient(req, res, next) {
     next();
   },
 
-  findUsers(req, res, next){
-  	usersDB.findAll()
-  	.then(users => {
-  		res.locals.users = users
-  		next()
-  	})
-  	.catch(err => next(err))
-  },
-
-  makeNewUser(req, res) {
-  	usersDB.create(req.body)
-  	.then(user => {
-  		res.locals.user = user;
- 
-  	})
-  	.catch(err => console.log(err));
-
-  },
 
 index(req, res, next) {
     clientDB.findAll()

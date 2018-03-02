@@ -3,22 +3,22 @@
 <form method="POST" action="/clients">
 <fieldset>
 	<legend>New Client</legend>
-	<input name="fname" type="text" placeholder="First Name:"/>
-	<input name="lname" type="text" placeholder="Last Name:"/>
+	<input name="fname" type="text" placeholder="First Name:"/><br>
+	<input name="lname" type="text" placeholder="Last Name:"/><br>
 	<select name="sex">
   	<option value="Male">Male</option>
   	<option value="Female">Female</option>
-  	</select>
-	<input name="address" type="text" placeholder="Address:"/>
-	<input name="homephone" type="tel" placeholder="Home Phone:"/>
-	<input name="cellphone" type="tel" placeholder="Cell Phone:"/>
-	<input name="email" type="email" placeholder="Email:"/>
-	<input name="dob" type="date" placeholder="Date of Birth:"/>
-	<select name="clienttag">
+  	</select><br>
+	<input name="address" type="text" placeholder="Address:"/><br>
+	<input name="homephone" type="tel" placeholder="Home Phone:"/><br>
+	<input name="cellphone" type="tel" placeholder="Cell Phone:"/><br>
+	<input name="email" type="email" placeholder="Email:"/><br>
+	<input name="dob" type="date" placeholder="Date of Birth:"/><br>
+	<select name="clienttag"><br>
     <% type.forEach(type =>{ %>
       <option value="<%= type.typeid %>"><%= type.type %></option>
     <% }) %>
-  </select>
+  </select><br>
 	<input class="btn btn-primary" type="Submit" Value="Create New Profile" />
 </fieldset>
 </form>

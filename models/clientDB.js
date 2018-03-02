@@ -10,7 +10,7 @@ module.exports = {
 						FROM clients
 						JOIN typeofclient
 						ON clients.clienttag= typeofclient.typeid
-						ORDER BY clients.id`);
+						ORDER BY clients.lname`);
 	},
 
 
