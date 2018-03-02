@@ -13,7 +13,7 @@ clientsRouter.post('/users', userController.makeNewUser, views.showLogin)
 
 clientsRouter.get('/search', views.showSearch)
 
-clientsRouter.get('/:id/editclient', clientsController.index, clientsController.getOne, views.showEditForm, views.show404);
+clientsRouter.get('/:id/editclient', travelTypeController.index, clientsController.index, clientsController.getOne, views.showEditForm, views.show404);
 clientsRouter.get('/newclient', travelTypeController.index, clientsController.makeNewClient, views.showAddForm, views.show404);
 
 

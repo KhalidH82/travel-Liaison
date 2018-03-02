@@ -1,26 +1,30 @@
 <% include ../partials/boilerplate %>
 
+
+<div class="clientinfo">
 <form method="POST" action="/clients">
-<fieldset>
-	<legend>New Client</legend>
-	<input class="input" name="fname" type="text" placeholder="First Name:"/><br>
-	<input class="input" name="lname" type="text" placeholder="Last Name:"/><br>
-	<select class="input" name="sex">
+
+	<h1>New Client</h1>
+	<input name="fname" type="text" placeholder="First Name:"/><br>
+	<input name="lname" type="text" placeholder="Last Name:"/><br>
+	<select name="sex" type="text">
   	<option value="Male">Male</option>
   	<option value="Female">Female</option>
   	</select><br>
-	<input class="input" name="address" type="text" placeholder="Address:"/><br>
-	<input class="input" name="homephone" type="tel" placeholder="Home Phone:"/><br>
-	<input class="input" name="cellphone" type="tel" placeholder="Cell Phone:"/><br>
-	<input class="input" name="email" type="email" placeholder="Email:"/><br>
-	<input class="input" name="dob" type="date" placeholder="Date of Birth:"/><br>
-	<select class="input" name="clienttag"><br>
+	<input name="address" type="text" placeholder="Address:"/><br>
+	<input name="homephone" type="tel" placeholder="Home Phone:"/><br>
+	<input name="cellphone" type="tel" placeholder="Cell Phone:"/><br>
+	<input name="email" type="email" placeholder="Email:"/><br>
+	<input name="dob" type="date" placeholder="Date of Birth:"/><br>
+	<select name="clienttag" type="text"><br>
     <% type.forEach(type =>{ %>
       <option value="<%= type.typeid %>"><%= type.type %></option>
     <% }) %>
   </select><br>
 	<input class="btn btn-primary" type="Submit" Value="Create New Profile" />
-</fieldset>
+
 </form>
+
+</div>
 
 <% include ../partials/footer %>

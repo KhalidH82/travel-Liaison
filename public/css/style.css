@@ -1,18 +1,78 @@
 body {
-	background-color: white;
-	font-family: 'Slabo 13px', serif;
-	background-image: url("/images/travelback.jpg");
-	background-repeat: no-repeat;
-    background-attachment: fixed;
+	font-family: 'Permanent Marker', cursive;
+	font-weight: bolder;
+	background-image: url("/images/travel.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	padding: 25px;
 
 }
 
-/*body{
-  margin: 0;
-  padding: 0;
-  background: #fff;
-}*/
+.heading {
+	color: rgb(255, 248, 63);
+	text-shadow:  2px 2px black;
+	font-size: 120px;
+	text-align: center;
+	margin
 
+}
+
+.clientinfo {
+	text-align: center;
+}
+
+input {
+	margin: 18px;
+}
+
+.thead {
+	font-size: 50px;
+	color: rgb(255, 248, 63);
+	text-shadow:  2px 2px black;
+}
+
+
+a {
+	color: silver;
+	text-shadow:  2px 2px black;
+	font-size: 25px;
+	letter-spacing: 3px;
+	font-family: arial;
+}
+
+#typeof {
+	color: red;
+	text-shadow:  2px 2px black;
+	font-family: arial;
+}
+
+input[type=text] {
+    background-color: rgb(255, 248, 63);
+    color: black;
+}
+
+input[type=tel] {
+    background-color: rgb(255, 248, 63);
+    color: black;
+}
+
+input[type=email] {
+    background-color: rgb(255, 248, 63);
+    color: black;
+}
+
+input[type=date] {
+    background-color: rgb(255, 248, 63);
+    color: black;
+}
+
+select[type=text] {
+    background-color: rgb(255, 248, 63);
+    color: black;
+}
+
+
+/* Styles Boarding Pass */
 .box{
   position: absolute;
   top: calc(50% - 125px);
@@ -24,7 +84,7 @@ body {
 .ticket{
   width: 600px;
   height: 250px;
-  background: #FFB300;
+  background: rgb(255, 248, 63);
   border-radius: 3px;
   box-shadow: 0 0 100px #aaa;
   border-top: 1px solid #E89F3D;
@@ -49,7 +109,7 @@ body {
   margin-top: 8px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent; 
-  border-right: 5px solid #FFB300;
+  border-right: 5px solid rgb(255, 248, 63);
 }
 
 .left li:nth-child(3),
@@ -107,14 +167,14 @@ body {
   margin-left: 2px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent; 
-  border-right: 5px solid #FFB300;
+  border-right: 5px solid rgb(255, 248, 63);
 }
 
 .left li:nth-child(14){
   margin-top: 7px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent; 
-  border-right: 5px solid #FFB300;
+  border-right: 5px solid rgb(255, 248, 63);
 }
 
 .right{
@@ -130,7 +190,7 @@ body {
   margin-top: 8px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent; 
-  border-left: 5px solid #FFB300;
+  border-left: 5px solid rgb(255, 248, 63);
 }
 
 .right li:nth-child(3),
@@ -187,7 +247,7 @@ body {
   margin-top: 7px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent; 
-  border-left: 5px solid #FFB300;
+  border-left: 5px solid rgb(255, 248, 63);
 }
 
 .ticket:after{
@@ -197,11 +257,11 @@ body {
   top: 0px;
   width: 2px;
   height: 250px;
-  box-shadow: inset 0 0 0 #FFB300,
+  box-shadow: inset 0 0 0 rgb(255, 248, 63),
     inset 0 -10px 0 #B56E0A,
-    inset 0 -20px 0 #FFB300,
+    inset 0 -20px 0 rgb(255, 248, 63),
     inset 0 -30px 0 #B56E0A,
-    inset 0 -40px 0 #FFB300,
+    inset 0 -40px 0 rgb(255, 248, 63),
     inset 0 -50px 0 #999999,
     inset 0 -60px 0 #E5E5E5,
     inset 0 -70px 0 #999999,
@@ -219,9 +279,9 @@ body {
     inset 0 -190px 0 #B0B0B0,
     inset 0 -200px 0 #EEEEEE,
     inset 0 -210px 0 #B0B0B0,
-    inset 0 -220px 0 #FFB300,
+    inset 0 -220px 0 rgb(255, 248, 63),
     inset 0 -230px 0 #B56E0A,
-    inset 0 -240px 0 #FFB300,
+    inset 0 -240px 0 rgb(255, 248, 63),
     inset 0 -250px 0 #B56E0A;
 }
 
@@ -233,11 +293,11 @@ body {
   top: 0px;
   width: 1px;
   height: 250px;
-  box-shadow: inset 0 0 0 #FFB300,
+  box-shadow: inset 0 0 0 rgb(255, 248, 63),
     inset 0 -10px 0 #F4D483,
-    inset 0 -20px 0 #FFB300,
+    inset 0 -20px 0 rgb(255, 248, 63),
     inset 0 -30px 0 #F4D483,
-    inset 0 -40px 0 #FFB300,
+    inset 0 -40px 0 rgb(255, 248, 63),
     inset 0 -50px 0 #FFFFFF,
     inset 0 -60px 0 #E5E5E5,
     inset 0 -70px 0 #FFFFFF,
@@ -255,9 +315,9 @@ body {
     inset 0 -190px 0 #FFFFFF,
     inset 0 -200px 0 #EEEEEE,
     inset 0 -210px 0 #FFFFFF,
-    inset 0 -220px 0 #FFB300,
+    inset 0 -220px 0 rgb(255, 248, 63),
     inset 0 -230px 0 #F4D483,
-    inset 0 -240px 0 #FFB300,
+    inset 0 -240px 0 rgb(255, 248, 63),
     inset 0 -250px 0 #F4D483;
 }
 
@@ -285,7 +345,7 @@ body {
   right: 220px;
   font-family: Arial;
   font-size: 18px;
-  color: rgba(255,255,255,0.6);
+  color: black;
 }
 
 .jfk{
@@ -413,7 +473,7 @@ body {
   height: 30px;
   width: 90px;
   background: #222;
-  box-shadow: inset 0 1px 0 #FFB300, inset -2px 0 0 #FFB300,
+  box-shadow: inset 0 1px 0 rgb(255, 248, 63), inset -2px 0 0 rgb(255, 248, 63),
     inset -4px 0 0 #222,
     inset -5px 0 0 #FFB300,
     inset -6px 0 0 #222,
@@ -507,4 +567,7 @@ body {
 .airlineslip{
   left: 455px;
 }
+
+
+
 

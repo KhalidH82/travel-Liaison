@@ -98,7 +98,7 @@ app.get('/logout', (req, res) => {
 
 app.get('/', (req, res)  => {
 	res.render('home', {
-		documentTitle: 'My life is your vacation'
+	
 	});
 });
 

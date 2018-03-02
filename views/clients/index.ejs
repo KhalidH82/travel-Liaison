@@ -1,22 +1,26 @@
 <% include ../partials/boilerplate %>
 
 
-
-<table>
+<div class="clientinfo">
+<table class="table table-hover">
+	<thead>
 	<tr>
-		<th>Last Name</th>
-		<th>First Name</th>
-		<th>Preference</th>
+		<th class="thead" scope="col">Last Name</th>
+		<th class="thead" scope="col">First Name</th>
+		<th class="thead" scope="col">Preference</th>
 	</tr>
+</thead>
+<tbody>
 <%	clients.forEach(client => { %> 
 	<tr>
-	<td><a href='clients/<%= client.id %>'><%= client.lname %></a></td>
-		<td><a href='clients/<%= client.id %>'><%= client.fname %></a></td>
-		<td><%= client.type %></td>
+	<td><a href='/clients/<%= client.id %>'><%= client.lname %></a></td>
+		<td><a href='/clients/<%= client.id %>'><%= client.fname %></a></td>
+		<td id="typeof"><%= client.type %></td>
 		</tr>
 <% }) %>
+</tbody>
 </table>
-<a href='/clients/newclient'><img src="/images/createpro.jpg" width="42" height="42" border="0">Create New Client</button></a>
-
+<a href='/clients/newclient'><button class="btn btn-success">Create New Client</button><img src="/images/createpro.jpg" width="42" height="42" border="0"></a>
+</div>
 
 <% include ../partials/footer %>

@@ -1,23 +1,26 @@
 <% include ../partials/boilerplate %>
 
-
+<div class="clientinfo">
 <form method="POST" action="/clients/<%= data.id%>?_method=PUT">
-<fieldset>
-	<legend>Edit Client</legend>
-<input name="id" type="hidden" value="<%= data.id %>">
-<input name="fname" type="text" value="<%= data.fname %>" />
-<input name="lname" type="text" value="<%= data.lname %>" />
-<input name="sex" type="text" value="<%= data.sex %>" />
-<input name="address" type="text" value="<%= data.address %>" />
-<input name="homephone" type="text" value="<%= data.homephone %>" />
-<input name="cellphone" type="text" value="<%= data.cellphone %>" />
-<input name="email" type="text" value="<%= data.email %>" />
-<input name="dob" type="text" value="<%= data.dob %>" />
-<input name="clienttag" value="<%= data.clienttag %>" />
-</fieldset>
-<img src="/images/editpro.png" width="42" height="42" border="0"><input class="btn btn-primary type="submit" value="Edit Profile"/>
+	<h1>Edit Client</h1>
+<input name="id" type="hidden" value="<%= data.id %>"><br>
+<input name="fname" type="text" value="<%= data.fname %>" /><br>
+<input name="lname" type="text" value="<%= data.lname %>" /><br>
+<input name="sex" type="text" value="<%= data.sex %>" /><br>
+<input name="address" type="text" value="<%= data.address %>" /><br>
+<input name="homephone" type="text" value="<%= data.homephone %>" /><br>
+<input name="cellphone" type="text" value="<%= data.cellphone %>" /><br>
+<input name="email" type="text" value="<%= data.email %>" /><br>
+<input name="dob" type="text" value="<%= data.dob %>" /><br>
+<select name="clienttag"><br>
+    <% type.forEach(type =>{ %>
+      <option value="<%= type.typeid %>"><%= type.type %></option>
+    <% }) %>
+  </select><br>
+  <input class="btn btn-primary" type="submit" value="Edit Profile"/>
+<img src="/images/editpro.png" width="42" height="42" border="0">
 </form>
 
-
+</div>
 
 <% include ../partials/footer %>
