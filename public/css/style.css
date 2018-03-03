@@ -8,13 +8,24 @@ body {
 
 }
 
+
+
+h1 {
+	text-shadow:  2px 2px rgb(206, 206, 206);
+}
+
 .heading {
 	color: rgb(255, 248, 63);
-	text-shadow:  2px 2px black;
+	text-shadow:  4px 4px black;
 	font-size: 120px;
 	text-align: center;
 	margin
+}
 
+.edithead {
+	text-shadow:  2px 2px #F8F8F8;
+	font-size: 60px;
+	text-decoration: underline;
 }
 
 .clientinfo {
@@ -28,22 +39,34 @@ input {
 .thead {
 	font-size: 50px;
 	color: rgb(255, 248, 63);
-	text-shadow:  2px 2px black;
+	text-shadow:  5px 5px black;
 }
 
 
 a {
-	color: silver;
+	color: rgb(255, 248, 63);
 	text-shadow:  2px 2px black;
-	font-size: 25px;
+	font-size: 28px;
 	letter-spacing: 3px;
-	font-family: arial;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#creatbut {
+	font-family: 'Permanent Marker', cursive;
+	float: right;
+}
+
+button {
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	margin: 5px;
 }
 
 #typeof {
 	color: red;
+	font-size: 28px;
 	text-shadow:  2px 2px black;
-	font-family: arial;
+	font-family: 'Open Sans', sans-serif;
 }
 
 input[type=text] {
@@ -62,6 +85,11 @@ input[type=email] {
 }
 
 input[type=date] {
+    background-color: rgb(255, 248, 63);
+    color: black;
+}
+
+input[type=password] {
     background-color: rgb(255, 248, 63);
     color: black;
 }

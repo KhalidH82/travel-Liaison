@@ -2,7 +2,7 @@
 
 <div class="clientinfo">
 <form method="POST" action="/clients/<%= data.id%>?_method=PUT">
-	<h1>Edit Client</h1>
+	<h1 class="edithead">Edit Client</h1>
 <input name="id" type="hidden" value="<%= data.id %>"><br>
 <input name="fname" type="text" value="<%= data.fname %>" /><br>
 <input name="lname" type="text" value="<%= data.lname %>" /><br>
@@ -18,8 +18,10 @@
     <% }) %>
   </select><br>
   <input class="btn btn-primary" type="submit" value="Edit Profile"/>
-<img src="/images/editpro.png" width="42" height="42" border="0">
 </form>
+<form action="/clients/<%= data.id %>?_method=Delete" method="Post">
+    <input class="btn btn-danger" type="Submit" value="Delete"/>
+  </form>
 
 </div>
 

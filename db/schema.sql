@@ -1,5 +1,4 @@
 
-
 DROP TABLE IF EXISTS clients;
 DROP TABLE IF EXISTS typeofclient;
 DROP TABLE IF EXISTS users;

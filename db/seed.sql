@@ -1,53 +1,5 @@
 
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Grace', 'Echlin', 'Female', '241 Del Sol Court', '(972) 4641637', '(950) 3323718', 'gechlin0@chronoengine.com', '02/06/2011', 6);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Maud', 'Heddon', 'Female', '659 Talisman Center', '(109) 5089795', '(797) 2736787', 'mheddon1@ezinearticles.com', '10/04/1999', 5);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Hyacinthia', 'Spofford', 'Female', '369 Warner Trail', '(407) 7530339', '(325) 5569696', 'hspofford2@opera.com', '06/10/2014', 3);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('David', 'Pebworth', 'Male', '45012 Portage Street', '(486) 4444523', '(531) 8898849', 'dpebworth3@miibeian.gov.cn', '08/08/1992', 6);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Spike', 'Twidle', 'Male', '3686 Sullivan Way', '(793) 3177693', '(894) 3916105', 'stwidle4@blinklist.com', '11/06/1997', 6);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Onfroi', 'Yegorkin', 'Male', '64 Mcguire Center', '(816) 1028246', '(149) 5063491', 'oyegorkin5@example.com', '10/27/1987', 9);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Nicol', 'Sissons', 'Female', '494 Morning Hill', '(934) 6315413', '(854) 1357878', 'nsissons6@harvard.edu', '12/14/2002', 4);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Tally', 'Constantine', 'Male', '1 Starling Street', '(388) 6883012', '(952) 2678778', 'tconstantine7@engadget.com', '08/16/1993', 3);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Friedrick', 'Beak', 'Male', '58 Dennis Road', '(227) 4156642', '(187) 7654164', 'fbeak8@youtu.be', '05/09/1994', 8);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Dion', 'Wagstaff', 'Male', '4 Vermont Plaza', '(158) 3458495', '(411) 3219144', 'dwagstaff9@zimbio.com', '04/17/2007', 3);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Sandi', 'Huws', 'Female', '41177 Express Point', '(163) 6536099', '(496) 7947589', 'shuwsa@harvard.edu', '10/23/2004', 9);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Averyl', 'Calliss', 'Female', '66 Monument Crossing', '(745) 5149965', '(933) 8480704', 'acallissb@google.es', '01/26/1985', 1);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Georgia', 'McKeurtan', 'Female', '99 Autumn Leaf Road', '(255) 8322606', '(260) 4800052', 'gmckeurtanc@reuters.com', '08/20/1992', 4);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Zak', 'Trinbey', 'Male', '1616 Ryan Court', '(462) 2933784', '(495) 5439882', 'ztrinbeyd@dell.com', '10/30/2004', 6);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Alvie', 'Clougher', 'Male', '20 Londonderry Street', '(531) 5825785', '(412) 4661833', 'acloughere@wikia.com', '04/10/1988', 6);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Husain', 'Munroe', 'Male', '6 Columbus Parkway', '(271) 7691645', '(577) 9876821', 'hmunroef@netscape.com', '02/01/1998', 8);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Elbertine', 'Strange', 'Female', '3 Wayridge Way', '(794) 7050465', '(528) 5117893', 'estrangeg@nyu.edu', '07/27/2015', 2);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Antin', 'Colliar', 'Male', '5 Londonderry Lane', '(680) 5756052', '(821) 4307671', 'acolliarh@networkadvertising.org', '04/13/2017', 6);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Tim', 'De Bruijne', 'Female', '4227 Hallows Pass', '(397) 7147620', '(638) 3607415', 'tdebruijnei@csmonitor.com', '03/17/1989', 7);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Goran', 'Meachan', 'Male', '9521 Hallows Pass', '(541) 5310606', '(717) 7274903', 'gmeachanj@mashable.com', '02/03/1986', 4);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Adler', 'Polet', 'Male', '4436 Jay Junction', '(712) 9861465', '(988) 8345036', 'apoletk@clickbank.net', '03/17/1997', 4);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Raviv', 'Kellogg', 'Male', '522 Fremont Terrace', '(422) 5857799', '(656) 1320371', 'rkelloggl@psu.edu', '02/23/2008', 5);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Conney', 'Hurndall', 'Male', '363 Esch Crossing', '(734) 9321290', '(343) 8642369', 'churndallm@tuttocitta.it', '04/20/1983', 4);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Marchall', 'Sertin', 'Male', '6735 Vidon Park', '(554) 1663733', '(657) 3942784', 'msertinn@columbia.edu', '08/23/2013', 2);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Agna', 'Toulmin', 'Female', '6574 Barnett Court', '(209) 2258031', '(344) 2460436', 'atoulmino@cargocollective.com', '05/30/2006', 4);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Goran', 'Cote', 'Male', '8 Charing Cross Place', '(927) 7465670', '(541) 8172992', 'gcotep@amazon.com', '07/28/1990', 7);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Harlen', 'Garham', 'Male', '0452 Fordem Circle', '(427) 2295581', '(640) 5555676', 'hgarhamq@wix.com', '03/14/1985', 2);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Northrup', 'Scotfurth', 'Male', '3 Hollow Ridge Trail', '(913) 7620623', '(592) 1814680', 'nscotfurthr@nasa.gov', '06/10/1982', 2);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Bar', 'Winter', 'Male', '6159 Bayside Junction', '(670) 4682508', '(628) 7351658', 'bwinters@google.de', '04/14/1983', 8);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Frans', 'Andreopolos', 'Male', '5 Havey Center', '(349) 6311916', '(907) 5049090', 'fandreopolost@godaddy.com', '05/31/2013', 9);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Hannie', 'Pettifer', 'Female', '3 Moulton Drive', '(804) 1227231', '(901) 7635969', 'hpettiferu@eepurl.com', '05/24/1983', 7);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Jacqueline', 'Oldall', 'Female', '5 Mendota Alley', '(518) 7960713', '(202) 2724202', 'joldallv@home.pl', '10/04/2008', 7);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Libby', 'Le Brum', 'Female', '143 Cordelia Alley', '(953) 7518432', '(759) 8348413', 'llebrumw@paginegialle.it', '12/20/1994', 2);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Romonda', 'Seagrave', 'Female', '996 Hayes Point', '(539) 4243675', '(204) 7156005', 'rseagravex@is.gd', '02/07/2018', 5);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Erich', 'Ashwood', 'Male', '22 Almo Lane', '(797) 3467352', '(314) 9047552', 'eashwoody@go.com', '02/03/1996', 5);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Lyn', 'Delue', 'Male', '426 Lerdahl Alley', '(877) 5916347', '(570) 7622520', 'ldeluez@ameblo.jp', '08/29/2012', 7);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Billi', 'Cicco', 'Female', '5557 Sycamore Circle', '(143) 8545090', '(512) 4103403', 'bcicco10@skype.com', '02/03/2005', 1);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Fransisco', 'Delnevo', 'Male', '5 Kenwood Place', '(565) 1564997', '(117) 3750353', 'fdelnevo11@smh.com.au', '10/07/1982', 2);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Barbabra', 'Schneidau', 'Female', '3170 Melody Way', '(769) 1450542', '(797) 9352567', 'bschneidau12@huffingtonpost.com', '08/10/1988', 1);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Jules', 'Cullity', 'Male', '7 Loomis Drive', '(958) 6711970', '(292) 5667023', 'jcullity13@yellowpages.com', '01/07/2011', 8);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Ruby', 'Cowdery', 'Female', '95043 Crescent Oaks Street', '(679) 5213493', '(295) 7679905', 'rcowdery14@digg.com', '04/25/2005', 6);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Gardy', 'Ecles', 'Male', '6 Twin Pines Lane', '(648) 2891142', '(328) 5707201', 'gecles15@free.fr', '02/03/2002', 3);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Rubin', 'Sealove', 'Male', '6 Tony Place', '(471) 2820474', '(751) 7915191', 'rsealove16@google.co.uk', '12/21/2015', 2);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Ned', 'Mougel', 'Male', '72214 Rowland Parkway', '(112) 8318682', '(427) 5619442', 'nmougel17@addtoany.com', '01/20/2006', 3);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Jamison', 'Laffin', 'Male', '0 Mifflin Hill', '(633) 2408906', '(796) 4777190', 'jlaffin18@unesco.org', '02/19/2011', 2);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Liliane', 'Flint', 'Female', '5 Utah Point', '(329) 5662754', '(666) 4345831', 'lflint19@imageshack.us', '05/07/2013', 8);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Joanna', 'Cathrae', 'Female', '01487 Rutledge Road', '(928) 2613203', '(904) 4618313', 'jcathrae1a@zdnet.com', '12/20/1984', 9);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Esme', 'Bartczak', 'Male', '18684 Morning Drive', '(753) 3341722', '(732) 2292046', 'ebartczak1b@surveymonkey.com', '02/14/2011', 1);
-insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Adrianna', 'Baselli', 'Female', '4 David Parkway', '(562) 3657554', '(836) 6573196', 'abaselli1c@moonfruit.com', '10/29/2014', 5);
+
 insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Tasia', 'Heibel', 'Female', '11 Gina Way', '(147) 9852951', '(424) 4889814', 'theibel1d@cornell.edu', '12/15/2017', 1);
 insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Van', 'Dyzart', 'Male', '2355 Schurz Plaza', '(306) 5704340', '(389) 3170465', 'vdyzart1e@businessinsider.com', '11/20/1986', 1);
 insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Conney', 'Seggie', 'Male', '5275 Crest Line Junction', '(834) 6817986', '(648) 3083527', 'cseggie1f@usa.gov', '07/20/2012', 7);
@@ -536,7 +488,7 @@ INSERT INTO typeofclient (type) VALUES ('Air');
 INSERT INTO typeofclient (type) VALUES ('Car Rental');
 INSERT INTO typeofclient (type) VALUES ('Rail');
 
-INSERT INTO users (username, password) VALUES ('test', 'test');
+
 
 
 
