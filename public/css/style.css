@@ -33,7 +33,10 @@ h1 {
 }
 
 input {
-	margin: 18px;
+   margin: 18px;
+   width: 375px;
+   height: 30px;
+ 
 }
 
 .thead {
@@ -92,6 +95,11 @@ input[type=date] {
 input[type=password] {
     background-color: rgb(255, 248, 63);
     color: black;
+}
+
+input[type=submit] {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
 }
 
 select[type=text] {

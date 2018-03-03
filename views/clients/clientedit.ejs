@@ -1,4 +1,5 @@
 <% include ../partials/boilerplate %>
+<h1>travel Liaison</h1>
 
 <div class="clientinfo">
 <form method="POST" action="/clients/<%= data.id%>?_method=PUT">
@@ -12,7 +13,7 @@
 <input name="cellphone" type="text" value="<%= data.cellphone %>" /><br>
 <input name="email" type="text" value="<%= data.email %>" /><br>
 <input name="dob" type="text" value="<%= data.dob %>" /><br>
-<select name="clienttag"><br>
+<select name="clienttag" type="text"><br>
     <% type.forEach(type =>{ %>
       <option value="<%= type.typeid %>"><%= type.type %></option>
     <% }) %>
