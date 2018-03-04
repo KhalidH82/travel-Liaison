@@ -1,7 +1,7 @@
 module.exports = {
 
 	show404(err, req, res, next) {
-		res.sendStatus(404);
+		res.render('clients/error');
 	},
 
 	showSignUp(req, res) {

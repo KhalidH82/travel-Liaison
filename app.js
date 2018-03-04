@@ -82,7 +82,7 @@ app.post('/login', (req, res) => {
 			req.session.regenerate(() => {
 				req.session.user = user;
 				req.session.sucess = 'Welcome';
-				res.redirect('/');
+				res.redirect('/loggedin');
 				console.log('login success')
 
 			});
@@ -96,11 +96,16 @@ app.get('/logout', (req, res) => {
 	});
 });
 
-app.get('/', (req, res)  => {
+app.get('/loggedin', (req, res)  => {
 	res.render('home', {
 	
 	});
 });
+
+app.get('/', (req, res) => {
+	res.redirect('/login')
+
+})
 
 app.use('/signup', signupRouter)
 app.use('/clients', router)
