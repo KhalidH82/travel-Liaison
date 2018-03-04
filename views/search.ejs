@@ -1,7 +1,21 @@
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
-<script src="/src/jquery.js"></script>
-<script src='/src/main.js'></script>
+<% include ./partials/boilerplate.ejs %>
+<div id="map"></div>
+
+        <div class="container">
+            <div class="row search-wrapper">    
+                <div class="col-xs-8 col-xs-offset-2 mobile-search">
+                    <form action="/search" method="GET">
+            		    <div class="input-group search-bar">
+                            <input type="hidden" name="type" value="name" id="search_type">         
+                            <input type="text" class="form-control" name="term" id="search_term" placeholder="Search..." value="<% if (locals.term){ %><%=term %><% } %>">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+        	</div>
+        </div>
 
 
-
-<button id='search'>Search Places</button>
+<% include ./partials/footer %>

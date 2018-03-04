@@ -1,27 +1,27 @@
 <% include ../partials/boilerplate %>
-<h1>travel Liaison</h1>
+
 <a href='/clients/newclient'><button id="creatbut" class="btn btn-success">Create New Client</button></a>
 
 <div class="clientinfo">
-<table class="table table-hover">
-	<thead>
-	<tr>
-		<th class="thead" scope="col">Last Name</th>
-		<th class="thead" scope="col">First Name</th>
-		<th class="thead" scope="col">Preference</th>
-	</tr>
-</thead>
-<tbody>
-<%	clients.forEach(client => { %> 
-	<tr>
-	<td><a href='/clients/<%= client.id %>'><%= client.lname %></a></td>
-		<td><a href='/clients/<%= client.id %>'><%= client.fname %></a></td>
-		<td id="typeof"><%= client.type %></td>
-		</tr>
-<% }) %>
-</tbody>
-</table>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th class="thead" scope="col">Last Name</th>
+				<th class="thead" scope="col">First Name</th>
+				<th class="thead" scope="col">Preference</th>
+			</tr>
+		</thead>
+		<tbody>
+			<%	clients.forEach(client => { %> 
+				<tr>
+				<td><a href='/clients/<%= client.id %>'><%= client.lname %></a></td>
+				<td><a href='/clients/<%= client.id %>'><%= client.fname %></a></td>
+				<td id="typeof"><%= client.type %></td>
+				</tr>
+				<% }) %>
+			</tbody>
+		</table>
 
-</div>
+	</div>
 
-<% include ../partials/footer %>
+	<% include ../partials/footer %>

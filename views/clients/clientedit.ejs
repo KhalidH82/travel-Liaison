@@ -1,29 +1,29 @@
 <% include ../partials/boilerplate %>
-<h1>travel Liaison</h1>
+
 
 <div class="clientinfo">
-<form method="POST" action="/clients/<%= data.id%>?_method=PUT">
-	<h1 class="edithead">Edit Client</h1>
-<input name="id" type="hidden" value="<%= data.id %>"><br>
-<input name="fname" type="text" value="<%= data.fname %>" /><br>
-<input name="lname" type="text" value="<%= data.lname %>" /><br>
-<input name="sex" type="text" value="<%= data.sex %>" /><br>
-<input name="address" type="text" value="<%= data.address %>" /><br>
-<input name="homephone" type="text" value="<%= data.homephone %>" /><br>
-<input name="cellphone" type="text" value="<%= data.cellphone %>" /><br>
-<input name="email" type="text" value="<%= data.email %>" /><br>
-<input name="dob" type="text" value="<%= data.dob %>" /><br>
-<select name="clienttag" type="text"><br>
-    <% type.forEach(type =>{ %>
-      <option value="<%= type.typeid %>"><%= type.type %></option>
-    <% }) %>
-  </select><br>
-  <input class="btn btn-primary" type="submit" value="Edit Profile"/>
-</form>
-<form action="/clients/<%= data.id %>?_method=Delete" method="Post">
-    <input class="btn btn-danger" type="Submit" value="Delete"/>
-  </form>
+	<form method="POST" action="/clients/<%= data.id%>?_method=PUT">
+		<h1 class="edithead">Edit Client</h1>
+		<input name="id" type="hidden" value="<%= data.id %>"><br>
+		<input name="fname" type="text" value="<%= data.fname %>" /><br>
+		<input name="lname" type="text" value="<%= data.lname %>" /><br>
+		<input name="sex" type="text" value="<%= data.sex %>" /><br>
+		<input name="address" type="text" value="<%= data.address %>" /><br>
+		<input name="homephone" type="text" value="<%= data.homephone %>" /><br>
+		<input name="cellphone" type="text" value="<%= data.cellphone %>" /><br>
+		<input name="email" type="text" value="<%= data.email %>" /><br>
+		<input name="dob" type="text" value="<%= data.dob %>" /><br>
+		<select name="clienttag" type="text"><br>
+			<% type.forEach(type =>{ %>
+				<option value="<%= type.typeid %>"><%= type.type %></option>
+				<% }) %>
+				</select><br>
+				<input class="btn btn-primary" type="submit" value="Edit Profile"/>
+				</form>
+				<form action="/clients/<%= data.id %>?_method=Delete" method="Post">
+				<input class="btn btn-danger" type="Submit" value="Delete"/>
+				</form>
 
-</div>
+				</div>
 
-<% include ../partials/footer %>
+				<% include ../partials/footer %>

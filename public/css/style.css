@@ -5,13 +5,19 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 	padding: 25px;
+	margin: 0 auto;
+}
 
+#map {
+	height: 400px;
+	width: : 100%;
 }
 
 
 
 h1 {
 	text-shadow:  2px 2px rgb(206, 206, 206);
+	font-size: 60px;
 }
 
 .heading {
@@ -19,12 +25,12 @@ h1 {
 	text-shadow:  4px 4px black;
 	font-size: 120px;
 	text-align: center;
-	margin
+	
 }
 
 .edithead {
 	text-shadow:  2px 2px #F8F8F8;
-	font-size: 60px;
+	font-size: 40px;
 	text-decoration: underline;
 }
 
@@ -35,7 +41,7 @@ h1 {
 input {
    margin: 18px;
    width: 375px;
-   height: 30px;
+   height: 50px;
  
 }
 
@@ -48,9 +54,7 @@ input {
 
 a {
 	color: rgb(255, 248, 63);
-	text-shadow:  2px 2px black;
 	font-size: 28px;
-	letter-spacing: 3px;
 	font-family: 'Open Sans', sans-serif;
 }
 
