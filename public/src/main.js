@@ -1,26 +1,14 @@
 
- /*   function initMap() {
-        // Create a map object and specify the DOM element for display.
-        let map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 40.745497, lng: -73.989344},
-          zoom: 8
-        });
-      }
-
-function activatePlacesSearch(){
-  let input = document.getElementById('search_term');
-  let autocomplete = new google.maps.places.Autocomplete(input);
-};*/
 
 function initMap() {
-  var home = new google.maps.LatLng(40.747738, -74.040396);
+  let home = new google.maps.LatLng(40.747738, -74.040396);
 
   map = new google.maps.Map(document.getElementById('map'), {
       center: home,
       zoom: 15
     });
 
-  var request = {
+  let request = {
     location: home,
     radius: '500',
     query: 'restaurant'
@@ -32,8 +20,8 @@ function initMap() {
 
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
-    for (var i = 0; i < results.length; i++) {
-      var place = results[i];
+    for (let i = 0; i < results.length; i++) {
+      let place = results[i];
      createMarker(place);
       console.log(place);
     }
@@ -42,7 +30,7 @@ function callback(results, status) {
 
 function createMarker(place) {
 
-  var contentString = '<div id="content">'+
+  let contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
       '<h1 id="firstHeading" class="firstHeading">'+ place.name + '</h1>'+
@@ -52,7 +40,7 @@ function createMarker(place) {
       '</div>'+
       '</div>';
 
-  var infowindow = new google.maps.InfoWindow({
+  let infowindow = new google.maps.InfoWindow({
     content: contentString
   });
 

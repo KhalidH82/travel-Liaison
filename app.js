@@ -11,10 +11,14 @@ const signupRouter = require('./routes/signup');
 const PORT = process.env.PORT || 3000;
 const app = express();
 
+
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+
 app.use(logger('dev'));
+
 
 app.use(
   bodyParser.urlencoded({
@@ -36,6 +40,8 @@ app.use(methodOverride('_method'));
 
 app.use(express.static('public'));
 
+
+/* This function checks to see if user exists in database */
 function authenticate(name, inputPassword, fn) {
 	 usersDB.findByUserName(name)
 	.then(user => {
@@ -69,10 +75,9 @@ app.get('/login', (req, res) => {
 	res.render('login');
 });
 
+/* Runs authenticate function on username and password and directs to Home page */
 app.post('/login', (req, res) => {
-	console.log('logging in')
 	const { username, password } = req.body;
-	console.log(req.body)
 	authenticate(username, password, (err, user) => {
 		if (err) {
 			req.session.error = 'Authentication failed. Please try again';
@@ -96,6 +101,7 @@ app.get('/logout', (req, res) => {
 	});
 });
 
+
 app.get('/loggedin', (req, res)  => {
 	res.render('home', {
 	
@@ -107,11 +113,10 @@ app.get('/', (req, res) => {
 
 })
 
+
+
 app.use('/signup', signupRouter)
 app.use('/clients', router)
-
-
-
 
 
 

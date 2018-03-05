@@ -10,7 +10,6 @@ $(()=>{
         testLL = data.results[0].geometry.location;
         console.log(testLL.lat)
 
-        //sendToDB(pokemon)
       }
 
     })

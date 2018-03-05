@@ -16,7 +16,7 @@ findUsers(req, res, next){
   		res.locals.user = user;
  		res.redirect('/login');
   	})
-  	.catch(err => console.log(err));
+  	.catch(err => next(err));
 
   },
 }
