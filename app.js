@@ -21,10 +21,10 @@ app.use(logger('dev'));
 
 
 app.use(
-  bodyParser.urlencoded({
-    extended: false,
-  }),
-);
+	bodyParser.urlencoded({
+		extended: false,
+	}),
+	);
 
 app.use(
 	session({
@@ -32,7 +32,7 @@ app.use(
 		saveUninitialized: false,
 		secret: 'shhhh, very secret',
 	}),
-);
+	);
 
 app.use(bodyParser.json());
 
@@ -43,7 +43,7 @@ app.use(express.static('public'));
 
 /* This function checks to see if user exists in database */
 function authenticate(name, inputPassword, fn) {
-	 usersDB.findByUserName(name)
+	usersDB.findByUserName(name)
 	.then(user => {
 		//Confirm if user does not exist that a falsey value is returned
 		if (!user) return fn(new Error('cannot find user'));
@@ -104,7 +104,7 @@ app.get('/logout', (req, res) => {
 
 app.get('/loggedin', (req, res)  => {
 	res.render('home', {
-	
+		
 	});
 });
 
@@ -121,5 +121,5 @@ app.use('/clients', router)
 
 
 app.listen(PORT, () => {
-  console.log(`Server up and listening on port ${PORT}, in ${app.get('env')} mode.`);
+	console.log(`Server up and listening on port ${PORT}, in ${app.get('env')} mode.`);
 });

@@ -2,34 +2,34 @@
 
 <!--Creates a form for user to create a new client to be added to database -->
 <a href='/loggedin'>
-		<button class="btn btn-primary">Home</button></a>
+<button class="btn btn-primary">Home</button></a>
 <a href='/clients/'>
 	<button class="btn btn-primary">View All Clients</button></a>
 
-<div class="clientinfo">
-	<form method="POST" action="/clients">
+	<div class="clientinfo">
+		<form method="POST" action="/clients">
 
-		<h1 class="edithead">New Client</h1>
-		<input name="fname" type="text" placeholder="First Name:"/><br>
-		<input name="lname" type="text" placeholder="Last Name:"/><br>
-		<select name="sex" type="text">
-			<option value="Male">Male</option>
-			<option value="Female">Female</option>
-		</select><br>
-		<input name="address" type="text" placeholder="Address:"/><br>
-		<input name="homephone" type="tel" placeholder="Home Phone:"/><br>
-		<input name="cellphone" type="tel" placeholder="Cell Phone:"/><br>
-		<input name="email" type="email" placeholder="Email:"/><br>
-		<input name="dob" type="date" placeholder="Date of Birth:"/><br>
-		<select name="clienttag" type="text"><br>
-			<% type.forEach(type =>{ %>
-				<option value="<%= type.typeid %>"><%= type.type %></option>
-				<% }) %>
-				</select><br>
-				<input class="btn btn-primary" type="Submit" Value="Create New Profile" />
+			<h1 class="edithead">New Client</h1>
+			<input name="fname" type="text" placeholder="First Name:"/><br>
+			<input name="lname" type="text" placeholder="Last Name:"/><br>
+			<select name="sex" type="text">
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+			</select><br>
+			<input name="address" type="text" placeholder="Address:"/><br>
+			<input name="homephone" type="tel" placeholder="Home Phone:"/><br>
+			<input name="cellphone" type="tel" placeholder="Cell Phone:"/><br>
+			<input name="email" type="email" placeholder="Email:"/><br>
+			<input name="dob" type="date" placeholder="Date of Birth:"/><br>
+			<select name="clienttag" type="text"><br>
+				<% type.forEach(type =>{ %>
+					<option value="<%= type.typeid %>"><%= type.type %></option>
+					<% }) %>
+					</select><br>
+					<input class="btn btn-primary" type="Submit" Value="Create New Profile" />
 
-				</form>
+					</form>
 
-				</div>
+					</div>
 
-				<% include ../partials/footer %>
+					<% include ../partials/footer %>

@@ -6,22 +6,22 @@
 
 <!--Creates search bar for future build out -->
 
-		<div class="container">
-            <div class="row search-wrapper">    
-                <div class="col-xs-8 col-xs-offset-2 mobile-search">
-            		    <div class="input-group search-bar">
-                            <input type="hidden" name="type" value="name" id="search_type">         
-                            <input type="text" class="form-control" name="term" id="search_term" placeholder="Search..." value="<% if (locals.term){ %><%=term %><% } %>">
-                            
-                             <!--  <button id="buttonSearch" class="btn btn-primary" type="submit"></button> -->
-                           
-                        </div>
-                  
-                </div>
-        	</div>
-        </div>
+<div class="container">
+	<div class="row search-wrapper">    
+		<div class="col-xs-8 col-xs-offset-2 mobile-search">
+			<div class="input-group search-bar">
+				<input type="hidden" name="type" value="name" id="search_type">         
+				<input type="text" class="form-control" name="term" id="search_term" placeholder="Search..." value="<% if (locals.term){ %><%=term %><% } %>">
+				
+				<!--  <button id="buttonSearch" class="btn btn-primary" type="submit"></button> -->
+				
+			</div>
+			
+		</div>
+	</div>
+</div>
 
 <a href='/loggedin'>
-		<button class="btn btn-primary">Home</button></a>
+	<button class="btn btn-primary">Home</button></a>
 
-<% include ./partials/footer %>
+	<% include ./partials/footer %>
