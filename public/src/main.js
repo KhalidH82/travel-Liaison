@@ -1,4 +1,4 @@
-
+/* Creates map at specified longitude and latiude returning restaurant around marker*/
 
 function initMap() {
   let home = new google.maps.LatLng(40.739637, -73.989509);
@@ -28,6 +28,7 @@ function callback(results, status) {
   }
 }
 
+/* Create popup marker with description of restaurant */
 function createMarker(place) {
 
   let contentString = '<div id="content">'+

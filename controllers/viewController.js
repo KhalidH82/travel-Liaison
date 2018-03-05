@@ -1,3 +1,5 @@
+/* Renders EJS files */
+
 module.exports = {
 
 	show404(err, req, res, next) {

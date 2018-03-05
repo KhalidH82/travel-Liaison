@@ -1,6 +1,8 @@
 const usersDB = require('../models/usersDB')
+
 module.exports = {
 
+/* Stores all users in res.locals */
 findUsers(req, res, next){
   	usersDB.findAll()
   	.then(users => {
@@ -10,6 +12,7 @@ findUsers(req, res, next){
   	.catch(err => next(err))
   },
 
+/* Creates a new user and redirects to them to login page */
   makeNewUser(req, res, next) {
   	usersDB.create(req.body)
   	.then(user => {

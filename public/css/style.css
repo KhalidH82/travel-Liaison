@@ -1,7 +1,9 @@
+/* Background image sourced from Google Images / https://www.vectorstock.com/ */
+
 body {
 	font-family: 'Permanent Marker', cursive;
 	font-weight: bolder;
-	background-image: url("/images/travel.jpg");
+	background-image: url("/images/travel.png");
 	background-position: center;
 	background-attachment: fixed;
 	padding: 25px;
@@ -12,8 +14,6 @@ body {
 	height: 400px;
 	width: : 100%;
 }
-
-
 
 h1 {
 	text-shadow:  2px 2px rgb(255, 248, 63);
@@ -30,7 +30,6 @@ h2 {
 p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 25px;
-
 }
 
 .heading {
@@ -38,7 +37,6 @@ p {
 	text-shadow:  4px 4px black;
 	font-size: 120px;
 	text-align: center;
-	
 }
 
 .edithead {
@@ -127,7 +125,7 @@ select[type=text] {
 }
 
 
-/* Styles Boarding Pass */
+/* Styles Boarding Pass --->  Lennart Hase https://codepen.io/motorlatitude/pen/JhuoB -->*/
 .box{
   position: absolute;
   top: calc(50% - 125px);

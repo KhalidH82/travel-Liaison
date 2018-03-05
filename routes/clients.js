@@ -17,7 +17,7 @@ clientsRouter.get('/:id/editclient', travelTypeController.index,clientsControlle
 clientsRouter.get('/newclient', travelTypeController.index, clientsController.makeNewClient, views.showAddForm, views.show404);
 
 
-clientsRouter.get('/:id', travelTypeController.index,clientsController.getOne, views.showOne, views.show404);
+clientsRouter.get('/:id', travelTypeController.index, clientsController.getOne, views.showOne, views.show404);
 clientsRouter.put('/:id', clientsController.update, views.handleUpdate)
 clientsRouter.delete('/:id', clientsController.destroy, views.handleDelete, views.show404);
 
