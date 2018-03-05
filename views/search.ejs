@@ -12,16 +12,18 @@
 			<div class="input-group search-bar">
 				<input type="hidden" name="type" value="name" id="search_type">         
 				<input type="text" class="form-control" name="term" id="search_term" placeholder="Search..." value="<% if (locals.term){ %><%=term %><% } %>">
-				
+
 				<!--  <button id="buttonSearch" class="btn btn-primary" type="submit"></button> -->
-				
+
 			</div>
-			
+
 		</div>
 	</div>
 </div>
 
 <a href='/loggedin'>
 	<button class="btn btn-primary">Home</button></a>
+<a href='/clients/'>
+		<button class="btn btn-primary">View All Clients</button></a>
 
 	<% include ./partials/footer %>
