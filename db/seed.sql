@@ -1,6 +1,5 @@
 
 
-
 insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Olga', 'Grinnikov', 'Female', '9831 Sherman Way', '(828) 4714373', '(593) 3586016', 'ogrinnikovcc@microsoft.com', '08/24/2000', 1);
 insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Lilla', 'Perrington', 'Female', '46626 Schmedeman Junction', '(279) 3327418', '(306) 9513987', 'lperringtoncd@chronoengine.com', '12/28/1990', 1);
 insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Pooh', 'Anfonsi', 'Female', '6 Rockefeller Road', '(627) 6909200', '(685) 8909868', 'panfonsice@dailymotion.com', '03/18/2009', 7);
@@ -58,30 +57,7 @@ insert into clients (fname, lname, sex, address, homephone, cellphone, email, do
 insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Tammie', 'Server', 'Female', '69194 Valley Edge Alley', '(820) 2757592', '(955) 2389227', 'tserverdu@blogs.com', '12/25/2006', 6);
 insert into clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag) values ('Jarad', 'Drezzer', 'Male', '24546 Daystar Terrace', '(310) 8277850', '(706) 1766337', 'jdrezzerdv@usgs.gov', '09/28/2007', 4);
 
--- INSERT INTO clients (fname, lname, sex, address, homephone, cellphone, email, dob, clienttag)
--- VALUES 
--- (
--- 'khalid',
--- 'hosein',
--- 'male',
--- '410 Ogden Avenue',
--- 7868389311,
--- 7868389311,
--- 'dieselk@optonline.net',
--- 'May 9th 1982',
--- 1
--- ),
--- (
--- 'faisal',
--- 'hosein',
--- 'male',
--- 'Brooklyn',
--- 1234567890,
--- 1234567890,
--- 'faisal.hosein@gmail.com',
--- 'April 19th 1976',
--- 2
--- );
+
 
 
 INSERT INTO typeofclient (type) VALUES ('Liesure Traveler');

@@ -125,13 +125,14 @@ select[type=text] {
 }
 
 
-/* Styles Boarding Pass --->  Lennart Hase https://codepen.io/motorlatitude/pen/JhuoB -->*/
+/* Styles for Boarding Pass --->  Lennart Hase https://codepen.io/motorlatitude/pen/JhuoB -->*/
 .box{
   position: absolute;
   top: calc(50% - 125px);
   top: -webkit-calc(50% - 125px);
   left: calc(50% - 300px);
   left: -webkit-calc(50% - 300px);
+  margin-top: 35px;
 }
 
 .ticket{

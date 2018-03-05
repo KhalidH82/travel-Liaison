@@ -1,6 +1,11 @@
 <% include ../partials/boilerplate %>
 
 <!--Creates input fields for user to edit and update clients profile in database -->
+<a href='/loggedin'>
+		<button class="btn btn-primary">Home</button></a>
+
+<a href='/clients/'>
+	<button class="btn btn-primary">View All Clients</button></a>
 
 <div class="clientinfo">
 	<form method="POST" action="/clients/<%= data.id%>?_method=PUT">
