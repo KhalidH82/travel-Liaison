@@ -1,7 +1,7 @@
 
 
 function initMap() {
-  let home = new google.maps.LatLng(40.747738, -74.040396);
+  let home = new google.maps.LatLng(40.739637, -73.989509);
 
   map = new google.maps.Map(document.getElementById('map'), {
       center: home,
@@ -10,7 +10,7 @@ function initMap() {
 
   let request = {
     location: home,
-    radius: '500',
+    radius: '1000',
     query: 'restaurant'
   };
 

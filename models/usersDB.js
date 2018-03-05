@@ -1,3 +1,8 @@
+/* This module is the interface for the database. It contains
+ CRUD methods in SQL to talk to the database.
+ Each function returns a promise
+ */
+
 const pgp = require('pg-promise')();
 const dbConfig = require('../config/dbConfig');
 const hasher = require('pbkdf2-password')();
@@ -6,17 +11,19 @@ const db = pgp(dbConfig);
 
 module.exports = {
 
+/* This method returns all users from users table for futher build out */
 	findAll() {
 		return db.any('SELECT * FROM users');
 
 	},
 
+/* This method creates a new user and stores in users table*/
 	createUser(user) {
 		return db.one(`INSERT INTO users (username, password) VALUES ($[username], $[password]) RETURNING *`, user);
 	},
 
+/* This method creates a new promise the hashes the password and inserts into users database */
 	create({ username, password }) {
-		// console.log('--> inside create', hashPromise);
 		const hashPromise = new Promise ((resolve, reject) => {
 			hasher({ password }, (err, pass, salt, hash) => {
 				if (err) return reject(err);
@@ -38,6 +45,7 @@ module.exports = {
 		});
 	},
 
+/* This method is for finding users by id for future bulid out of application */ 
 	findByUserName(username) {
 		return db.one(`
 			SELECT * FROM users
@@ -46,6 +54,7 @@ module.exports = {
 			);
 	},
 
+/* This method is for deleting users by id for future bulid out of application*/ 
 	destroyByUsername(username) {
 		return db.none(
 			`DELETE FROM users 
@@ -54,6 +63,7 @@ module.exports = {
 			);
 	},
 
+/* This authenticate method checks if username and password matches salted password */
 	authenticate({ username, password }) {
     return this.findByUsername(username).then(
       user =>

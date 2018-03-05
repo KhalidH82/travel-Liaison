@@ -21,8 +21,8 @@ h1 {
 }
 
 h2 {
-	color: rgb(21, 0, 255);
-	text-shadow:  2px 2px rgb(255, 248, 63);
+	color: blue;
+	text-shadow:  4px 4px black;
 	font-size: 75px;
 	text-align: center;
 }
