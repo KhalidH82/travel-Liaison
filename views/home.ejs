@@ -1,4 +1,16 @@
 <% include ./partials/boilerplate.ejs %>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+    	<a href='/clients/newclient'>
+	<button class="btn btn-primary">Create New Client</button></a>
+	<a href='/clients/'>
+		<button class="btn btn-primary">View All Clients</button></a>
+		<a href='/clients/search'>
+			<button class="btn btn-primary">Destination Search</button></a>
+     </div>
+  </div>
+</nav>
 <!-- Home page where users can create a new client to add to database and also view all clients in database-->
 <br>
 <br>
@@ -15,11 +27,5 @@
 
 
 
-<a href='/clients/newclient'>
-	<button class="btn btn-primary">Create New Client</button></a>
-	<a href='/clients/'>
-		<button class="btn btn-primary">View All Clients</button></a>
-		<a href='/clients/search'>
-			<button class="btn btn-primary">Destination Search</button></a>
 			
 			<% include ./partials/footer.ejs %>

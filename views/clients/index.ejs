@@ -1,13 +1,18 @@
 <% include ../partials/boilerplate %>
-
-<!--Creates a table of clients ordered by last name and type of travel they are interested in --> 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
 <a href='/loggedin'>
 		<button class="btn btn-primary">Home</button></a>
-
 <a href='/clients/newclient'><button class="btn btn-primary">Create New Client</button></a>
-
 <a href='/clients/search'>
 			<button class="btn btn-primary">Destination Search</button></a>
+    	
+     </div>
+  </div>
+</nav>
+
+<!--Creates a table of clients ordered by last name and type of travel they are interested in --> 
 
 <div class="clientinfo">
 	<table class="table table-hover">
