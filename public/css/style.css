@@ -1,5 +1,3 @@
-
-
 body {
   text-align: center;
 	font-weight: bolder;
@@ -21,9 +19,16 @@ h1 {
 
 h2 {
 	color: blue;
-	text-shadow:  4px 4px black;
 	font-size: 20px;
 
+}
+
+.client {
+  float: right;
+}
+
+.editbutt {
+  float: left;
 }
 
 p {
